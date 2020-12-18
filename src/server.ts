@@ -4,7 +4,11 @@ import routes from './routes'
 
 import path from 'path'
 
+const cors = require('cors')
+
 const app = express()
+
+app.use(cors())
 
 app.use(express.json())
 
